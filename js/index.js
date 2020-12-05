@@ -61,15 +61,15 @@ let episodes = [
     episodeNumber: 1,
     episodeLabel: "Part 1: Winter",
     audioAssets:[
-      "./sounds/HC-Winter-Amb-1Test-short.mp3",
+      "./HolidayCorner-Scene1-Amb.mp3",
       "./sounds/Wonderland-Scene1-2.0M-Winter.mp3"
     ]
   },{
     episodeNumber: 2,
     episodeLabel: "Part 2: The Voyage",
     audioAssets:[
-      "./sounds/HC-Winter-Amb-1Test-short.mp3",
-      "./sounds/Wonderland_Window-Place.mp3"
+      "./sounds/HolidayCorner-Scene2-Amb.mp3",
+      "./sounds/HolidayCorner-Scene2-Mus.mp3"
     ]
   },{
     episodeNumber: 3,
