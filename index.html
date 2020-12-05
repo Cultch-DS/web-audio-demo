@@ -26,13 +26,7 @@
         </div>               
     </div>
 
-    <div class="row">
-      <div class="col-sm-8 ml-4 mr-4 d-sm-inline-flex justify-content-between"> 
-        <!-- checkout https://getbootstrap.com/docs/4.5/utilities/flex/ for flex examples -->
-        <a class="btn btn-outline-light mb-4 hidden" href="" id="previous_episode">Previous</a>
-        <a class="btn btn-outline-light mb-4 hidden" href="" id="next_episode">Next</a>
-      </div>
-    </div>
+    
 
     <div class="row">
         <div class="col-sm-8 mb-4 ml-4 mr-4">
@@ -47,15 +41,15 @@
     <div class="row">
       <div class="col-sm-8 mb-4 ml-4 mr-4 d-sm-inline-flex justify-content-between">
           <!-- best practice for mobile web audio: have the user click a button to begin rather than attempt to autoplay sound -->
-          <input class="btn btn-outline-light btn-lg font-weight-bold" type="button" id="enable_audio_button" value="Begin">
+          <input class="btn btn-outline-light font-weight-bold" type="button" id="enable_audio_button" value="Begin">
 
           <h5 id="loading_indicator" class="hidden">Loading...</h5>
 
           <!-- Stop button is hidden on page load -->
-          <input class="btn btn-outline-light btn-lg font-weight-bold hidden" type="button" id="stop_button" value="Stop">
+          <input class="btn btn-outline-light font-weight-bold hidden" type="button" id="stop_button" value="Stop">
 
           <!-- Resume button is hidden on page load -->
-          <input type="button" id="resume_button" value="Resume" class="btn btn-outline-light btn-lg font-weight-bold hidden">
+          <input type="button" id="resume_button" value="Resume" class="btn btn-outline-light font-weight-bold hidden">
           
       </div>
     </div>
@@ -71,6 +65,14 @@
           </div>
         </form>
       </div>    
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8 ml-4 mr-4 mt- auto d-sm-inline-flex justify-content-between"> 
+        <!-- checkout https://getbootstrap.com/docs/4.5/utilities/flex/ for flex examples -->
+        <a class="btn btn-outline-light mb-4 hidden" href="" id="previous_episode">Previous</a>
+        <a class="btn btn-outline-light mb-4 hidden" href="" id="next_episode">Next</a>
+      </div>
     </div>
   </div>
 
