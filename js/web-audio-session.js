@@ -44,7 +44,6 @@ var WebAudioSession = {
       console.log('loading complete')
       // setting up crossfade
       if(this.players.size == 2){ // make sure there's only two samples / tracks
-        console.log(0)
         try {
           this.fader = new Tone.CrossFade().toDestination()
         } catch(error){
