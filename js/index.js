@@ -43,15 +43,14 @@ console.log("Episode: " + activeEpisode)
 // set up prev/next episode UI
 let prevEpisode = document.getElementById('previous_episode')
 let nextEpisode = document.getElementById('next_episode')
-if(activeEpisode == 1) { 
-  prevEpisode.classList.add('hidden')
-} else {
+if(activeEpisode !== 1) { 
+  prevEpisode.classList.remove('hidden')
   prevEpisode.setAttribute('href', '/?episode=' + (activeEpisode - 1))
-}
+  // nextEpisode.classList.remove('hidden')
+} 
 
-if(activeEpisode == 4) { 
-  nextEpisode.classList.add('hidden')
-} else {    
+if(activeEpisode !== 4) {  
+  nextEpisode.classList.remove('hidden')
   nextEpisode.setAttribute('href', '/?episode=' + (activeEpisode + 1))
 }
 
