@@ -88,6 +88,9 @@ document.getElementById("crossfade_slider").addEventListener('input', (event) =>
 // set up what happens when user interacts with Begin button
 document.getElementById("enable_audio_button").addEventListener('click', (event) => {
   noSleep.enable()
+  setTimeout(() => {
+    noSleep.disable()
+  }, 60*10) // 60 seconds per minute times ten minutes 
 
   document.getElementById("enable_audio_button").setAttribute('disabled', " ") // button will not accept further presses
 
@@ -112,9 +115,11 @@ document.getElementById("enable_audio_button").addEventListener('click', (event)
 // set up the Stop button
 document.getElementById("stop_button").addEventListener( 'click', event => {
   WebAudioSession.stopAll()
+  noSleep.disable()
 })
 
 // set up the Resume button
 document.getElementById("resume_button").addEventListener( 'click', event => {
   WebAudioSession.startAll()
+  noSleep.enable()
 })
