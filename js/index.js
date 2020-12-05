@@ -40,6 +40,22 @@ if(!queryParams || !queryParams.get('episode')){
 
 console.log("Episode: " + activeEpisode)
 
+// set up prev/next episode UI
+let prevEpisode = document.getElementById('previous_episode')
+let nextEpisode = document.getElementById('next_episode')
+if(activeEpisode == 1) { 
+  prevEpisode.classList.add('hidden')
+} else {
+  prevEpisode.setAttribute('href', '/?episode=' + (activeEpisode - 1))
+}
+
+if(activeEpisode == 4) { 
+  nextEpisode.classList.add('hidden')
+} else {    
+  nextEpisode.setAttribute('href', '/?episode=' + (activeEpisode + 1))
+}
+
+
 // define episodes and their audio files
 let episodes = [
   {
