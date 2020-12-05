@@ -1,3 +1,6 @@
+import NoSleep from 'nosleep.js'
+var noSleep = new NoSleep()
+
 import { WebAudioSession } from './web-audio-session.js'
 
 MicroEvent.mixin(WebAudioSession)
@@ -84,7 +87,8 @@ document.getElementById("crossfade_slider").addEventListener('input', (event) =>
 
 // set up what happens when user interacts with Begin button
 document.getElementById("enable_audio_button").addEventListener('click', (event) => {
-  
+  noSleep.enable()
+
   document.getElementById("enable_audio_button").setAttribute('disabled', " ") // button will not accept further presses
 
   document.getElementById("loading_indicator").classList.remove('hidden')
@@ -103,7 +107,7 @@ document.getElementById("enable_audio_button").addEventListener('click', (event)
       document.getElementById("enable_audio_button").removeAttribute('disabled')
       console.log(error)
     })
-})
+}, false)
 
 // set up the Stop button
 document.getElementById("stop_button").addEventListener( 'click', event => {
