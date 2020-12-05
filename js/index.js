@@ -61,7 +61,7 @@ let episodes = [
     episodeNumber: 1,
     episodeLabel: "Part 1: Winter",
     audioAssets:[
-      "./sounds/HolidayCorner-Scene2-Amb.mp3",
+      "./sounds/HolidayCorner-Scene1-Amb.mp3",
       "./sounds/Wonderland-Scene1-2.0M-Winter.mp3"
     ]
   },{
