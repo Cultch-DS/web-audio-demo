@@ -62,7 +62,7 @@ let episodes = [
     episodeLabel: "Part 1: Winter",
     audioAssets:[
       "./sounds/HolidayCorner-Scene1-Amb.mp3",
-      "./sounds/Wonderland-Scene1-2.0M-Winter.mp3"
+      "./sounds/HolidayCorner-Scene1-Mus.mp3"
     ]
   },{
     episodeNumber: 2,
@@ -75,15 +75,15 @@ let episodes = [
     episodeNumber: 3,
     episodeLabel: "Part 3: The Meeting Place",
     audioAssets:[
-      "./sounds/HC-Winter-Amb-1Test-short.mp3",
-      "./sounds/Wonderland-Scene3-2.5MThePlace.mp3"
+      "./sounds/HolidayCorner-Scene3-Amb.mp3",
+      "./sounds/HolidayCorner-Scene3-Mus.mp3"
     ]
   },{
     episodeNumber: 4,
     episodeLabel: "Part 4: Spring",
     audioAssets:[
-      "./sounds/HC-Winter-Amb-1Test-short.mp3",
-      "./sounds/Wonderland-Scene4-2M-Spring.mp3"
+      "./sounds/HolidayCorner-Scene4-Amb.mp3",
+      "./sounds/HolidayCorner-Scene4-Mus.mp3"
     ]
   }
 ]
